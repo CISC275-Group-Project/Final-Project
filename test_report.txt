@@ -6,7 +6,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (40 ms)
+  ✕ renders the course name somewhere (52 ms)
 
   ● renders the course name somewhere
 
@@ -67,6 +67,45 @@ FAIL src/App.test.tsx
             [36m</code>[39m
             [0m and save. This page will automatically reload.[0m
           [36m</p>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mShow One Semester[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mShow Different Semester[0m
+            [36m</button>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Semester"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"Fall"[39m
+              [36m>[39m
+                [36m<h1>[39m
+                  [0mFall[0m
+                [36m</h1>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCISC 275[0m
+                    [0m [0m
+                    [0m3[0m
+                    [0m [0m
+                    [0mCOE[0m
+                    [0m [0m
+                    [0mIntro to Software Engineering[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
     [36m</body>[39m
@@ -90,14 +129,21 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
-----------|---------|----------|---------|---------|-------------------
-File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------|---------|----------|---------|---------|-------------------
-All files |     100 |      100 |     100 |     100 |                   
- App.tsx  |     100 |      100 |     100 |     100 |                   
-----------|---------|----------|---------|---------|-------------------
+--------------------|---------|----------|---------|---------|----------------------
+File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s    
+--------------------|---------|----------|---------|---------|----------------------
+All files           |   46.66 |       25 |   41.66 |   46.66 |                      
+ src                |     100 |      100 |     100 |     100 |                      
+  App.tsx           |     100 |      100 |     100 |     100 |                      
+ src/Components     |   44.82 |       25 |   36.36 |   44.82 |                      
+  Requirements.tsx  |       0 |        0 |       0 |       0 |                      
+  ViewSemesters.tsx |   44.82 |       25 |   36.36 |   44.82 | 40-55,80-121,138-141 
+ src/Interfaces     |       0 |        0 |       0 |       0 |                      
+  course.ts         |       0 |        0 |       0 |       0 |                      
+  degree.ts         |       0 |        0 |       0 |       0 |                      
+--------------------|---------|----------|---------|---------|----------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        1.519 s
+Time:        2.443 s
 Ran all test suites.
