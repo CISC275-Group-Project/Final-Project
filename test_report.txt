@@ -6,7 +6,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (52 ms)
+  ✕ renders the course name somewhere (78 ms)
 
   ● renders the course name somewhere
 
@@ -28,6 +28,13 @@ FAIL src/App.test.tsx
     [36m<p>[39m
       [0mCISC275 Final-Project[0m
     [36m</p>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<span>[39m
+      [0mCISC275[0m
+      [0m - [0m
+      [0mIntroduction to Software Engineering[0m
+    [36m</span>[39m
 
     (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
 
@@ -94,13 +101,351 @@ FAIL src/App.test.tsx
                   [33mclass[39m=[32m"Course"[39m
                 [36m>[39m
                   [36m<span>[39m
-                    [0mCISC 275[0m
-                    [0m [0m
-                    [0m3[0m
-                    [0m [0m
-                    [0mCOE[0m
-                    [0m [0m
-                    [0mIntro to Software Engineering[0m
+                    [0mENGL110[0m
+                    [0m - [0m
+                    [0mFirst-Year Writing[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCISC108[0m
+                    [0m - [0m
+                    [0mIntroduction to Computer Science I[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCISC181[0m
+                    [0m - [0m
+                    [0mIntroduction to Computer Science II[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCISC210[0m
+                    [0m - [0m
+                    [0mIntroduction to Systems Programming[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCISC220[0m
+                    [0m - [0m
+                    [0mData Structures[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCISC260[0m
+                    [0m - [0m
+                    [0mMachine Organization and Assembly Language[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCISC275[0m
+                    [0m - [0m
+                    [0mIntroduction to Software Engineering[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCISC303[0m
+                    [0m - [0m
+                    [0mAutomata Theory[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCISC320[0m
+                    [0m - [0m
+                    [0mIntroduction to Algorithms[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCISC361[0m
+                    [0m - [0m
+                    [0mOperating Systems[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCISC372[0m
+                    [0m - [0m
+                    [0mParallel Computing[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mMATH210[0m
+                    [0m - [0m
+                    [0mDiscrete Mathematics I[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mMATH241[0m
+                    [0m - [0m
+                    [0mAnalytical Geometry and Calculus A[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mMATH242[0m
+                    [0m - [0m
+                    [0mAnalytical Geometry and Calculus B[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mMATH205[0m
+                    [0m - [0m
+                    [0mStatistical Methods[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mMATH350[0m
+                    [0m - [0m
+                    [0mProbability Theory and Simulation Methods[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCISC498[0m
+                    [0m - [0m
+                    [0mComputer Science Senior Design Project I[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCISC499[0m
+                    [0m - [0m
+                    [0mComputer Science Senior Design Project II[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mUNIV401[0m
+                    [0m - [0m
+                    [0mSenior Thesis I[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mUNIV402[0m
+                    [0m - [0m
+                    [0mSenior Thesis II[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mPHYS207[0m
+                    [0m - [0m
+                    [0mFundamentals of Physics I[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mPHYS227[0m
+                    [0m - [0m
+                    [0mFundamentals of Physics Laboratory I[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mPHYS208[0m
+                    [0m - [0m
+                    [0mFundamentals of Physics II[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mPHYS228[0m
+                    [0m - [0m
+                    [0mFundamentals of Physics Laboratory II[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCHEM103[0m
+                    [0m - [0m
+                    [0mGeneral Chemistry I[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCHEM133[0m
+                    [0m - [0m
+                    [0mGeneral Chemistry Laboratory I[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCHEM104[0m
+                    [0m - [0m
+                    [0mGeneral Chemistry II[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCHEM134[0m
+                    [0m - [0m
+                    [0mGeneral Chemistry Laboratory II[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mBISC207[0m
+                    [0m - [0m
+                    [0mIntroductory Biology I[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mBISC208[0m
+                    [0m - [0m
+                    [0mIntroductory Biology II[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mGEOL105[0m
+                    [0m - [0m
+                    [0mGeological Hazards and Their Human Impact[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mGEOL107[0m
+                    [0m - [0m
+                    [0mGeology of Dynamic Earth[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mGEOL115[0m
+                    [0m - [0m
+                    [0mGeological Hazards Laboratory[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mGEOL110[0m
+                    [0m - [0m
+                    [0mEarth's Evolving Systems[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCISC355[0m
+                    [0m - [0m
+                    [0mComputers, Ethics, and Society[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mCISC304[0m
+                    [0m - [0m
+                    [0mLogic for Programming[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mMATH349[0m
+                    [0m - [0m
+                    [0mElementary Linear Algebra[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mENGL312[0m
+                    [0m - [0m
+                    [0mWritten Communications in Business[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Course"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mENGL410[0m
+                    [0m - [0m
+                    [0mTechnical Writing[0m
                   [36m</span>[39m
                 [36m</div>[39m
               [36m</div>[39m
@@ -132,18 +477,21 @@ FAIL src/App.test.tsx
 --------------------|---------|----------|---------|---------|----------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s    
 --------------------|---------|----------|---------|---------|----------------------
-All files           |   46.66 |       25 |   41.66 |   46.66 |                      
+All files           |   20.89 |    18.75 |   35.29 |   21.21 |                      
  src                |     100 |      100 |     100 |     100 |                      
   App.tsx           |     100 |      100 |     100 |     100 |                      
- src/Components     |   44.82 |       25 |   36.36 |   44.82 |                      
-  Requirements.tsx  |       0 |        0 |       0 |       0 |                      
-  ViewSemesters.tsx |   44.82 |       25 |   36.36 |   44.82 | 40-55,80-121,138-141 
- src/Interfaces     |       0 |        0 |       0 |       0 |                      
+ src/Components     |   30.95 |    18.75 |   31.25 |    31.7 |                      
+  Requirements.tsx  |       0 |      100 |       0 |       0 | 15-89                
+  ViewSemesters.tsx |   40.74 |       25 |   36.36 |   40.74 | 32-47,74-117,135-138 
+  course.tsx        |   22.22 |        0 |   33.33 |      25 | 27-33                
+ src/Interfaces     |       0 |      100 |     100 |       0 |                      
   course.ts         |       0 |        0 |       0 |       0 |                      
   degree.ts         |       0 |        0 |       0 |       0 |                      
+  requirements.ts   |       0 |      100 |     100 |       0 | 8-226                
+  semester.ts       |       0 |        0 |       0 |       0 |                      
 --------------------|---------|----------|---------|---------|----------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.443 s
+Time:        2.543 s
 Ran all test suites.
