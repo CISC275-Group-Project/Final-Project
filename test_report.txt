@@ -6,7 +6,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (78 ms)
+  ✕ renders the course name somewhere (74 ms)
 
   ● renders the course name somewhere
 
@@ -18,16 +18,23 @@ FAIL src/App.test.tsx
     [36m<header[39m
       [33mclass[39m=[32m"App-header"[39m
     [36m>[39m
-      [0mUD CISC275 with React Hooks and TypeScript[0m
-      [36m<p>[39m
-        [0mCISC275 Final-Project[0m
-      [36m</p>[39m
+      [0mUD CISC275 - Degree Planner[0m
+      [36m<h6>[39m
+        [0mMatthew Mestre[0m
+      [36m</h6>[39m
+      [36m<h6>[39m
+        [0mBryant Ferguson[0m
+      [36m</h6>[39m
+      [36m<h6>[39m
+        [0mAva West[0m
+      [36m</h6>[39m
+      [36m<h6>[39m
+        [0mMalika Iyer[0m
+      [36m</h6>[39m
+      [36m<h6>[39m
+        [0mDina Dawood[0m
+      [36m</h6>[39m
     [36m</header>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<p>[39m
-      [0mCISC275 Final-Project[0m
-    [36m</p>[39m
 
     Ignored nodes: comments, <script />, <style />
     [36m<span>[39m
@@ -47,33 +54,39 @@ FAIL src/App.test.tsx
           [36m<header[39m
             [33mclass[39m=[32m"App-header"[39m
           [36m>[39m
-            [0mUD CISC275 with React Hooks and TypeScript[0m
+            [0mUD CISC275 - Degree Planner[0m
+            [36m<h6>[39m
+              [0mMatthew Mestre[0m
+            [36m</h6>[39m
+            [36m<h6>[39m
+              [0mBryant Ferguson[0m
+            [36m</h6>[39m
+            [36m<h6>[39m
+              [0mAva West[0m
+            [36m</h6>[39m
+            [36m<h6>[39m
+              [0mMalika Iyer[0m
+            [36m</h6>[39m
+            [36m<h6>[39m
+              [0mDina Dawood[0m
+            [36m</h6>[39m
+          [36m</header>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"btn btn-info "[39m
+            [33mdata-bs-target[39m=[32m"#welcome_message"[39m
+            [33mdata-bs-toggle[39m=[32m"collapse"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mNeed Help❓[0m
+          [36m</button>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"collapse"[39m
+            [33mid[39m=[32m"welcome_message"[39m
+          [36m>[39m
             [36m<p>[39m
-              [0mCISC275 Final-Project[0m
+              [0mWelcome to your personal Degree Planner! Some basic tools have been designed to make your visit accessible to your needs; this includes creating new plans from scratch and/or compiling data from a csv file. You will be able to add, remove, edit, and save various courses/semesters in a multitude of plans. Scroll to the bottom of the page for more instructions (will enhance later by making an expandable/disposable button near the top of the page).[0m
             [36m</p>[39m
-          [36m</header>[39m
-          [36m<header>[39m
-            [0mMatthew Mestre[0m
-          [36m</header>[39m
-          [36m<header>[39m
-            [0mBryant Ferguson [0m
-          [36m</header>[39m
-          [36m<header>[39m
-            [0mAva West[0m
-          [36m</header>[39m
-          [36m<header>[39m
-            [0mMalika Iyer[0m
-          [36m</header>[39m
-          [36m<header>[39m
-            [0mDina Dawood[0m
-          [36m</header>[39m
-          [36m<p>[39m
-            [0mEdit [0m
-            [36m<code>[39m
-              [0msrc/App.tsx[0m
-            [36m</code>[39m
-            [0m and save. This page will automatically reload.[0m
-          [36m</p>[39m
+          [36m</div>[39m
           [36m<hr />[39m
           [36m<div>[39m
             [36m<button[39m
@@ -474,24 +487,24 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
---------------------|---------|----------|---------|---------|----------------------
-File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s    
---------------------|---------|----------|---------|---------|----------------------
-All files           |   20.89 |    18.75 |   35.29 |   21.21 |                      
- src                |     100 |      100 |     100 |     100 |                      
-  App.tsx           |     100 |      100 |     100 |     100 |                      
- src/Components     |   30.95 |    18.75 |   31.25 |    31.7 |                      
-  Requirements.tsx  |       0 |      100 |       0 |       0 | 15-89                
-  ViewSemesters.tsx |   40.74 |       25 |   36.36 |   40.74 | 32-47,74-117,135-138 
-  course.tsx        |   22.22 |        0 |   33.33 |      25 | 27-33                
- src/Interfaces     |       0 |      100 |     100 |       0 |                      
-  course.ts         |       0 |        0 |       0 |       0 |                      
-  degree.ts         |       0 |        0 |       0 |       0 |                      
-  requirements.ts   |       0 |      100 |     100 |       0 | 8-226                
-  semester.ts       |       0 |        0 |       0 |       0 |                      
---------------------|---------|----------|---------|---------|----------------------
+-------------------|---------|----------|---------|---------|----------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s    
+-------------------|---------|----------|---------|---------|----------------------
+All files          |   20.89 |    18.75 |   35.29 |   21.21 |                      
+ src               |     100 |      100 |     100 |     100 |                      
+  App.tsx          |     100 |      100 |     100 |     100 |                      
+ src/Components    |   30.95 |    18.75 |   31.25 |    31.7 |                      
+  Requirements.tsx |       0 |      100 |       0 |       0 | 15-89                
+  Semester.tsx     |   40.74 |       25 |   36.36 |   40.74 | 34-49,76-119,137-140 
+  course.tsx       |   22.22 |        0 |   33.33 |      25 | 27-33                
+ src/Interfaces    |       0 |      100 |     100 |       0 |                      
+  course.ts        |       0 |        0 |       0 |       0 |                      
+  degree.ts        |       0 |        0 |       0 |       0 |                      
+  requirements.ts  |       0 |      100 |     100 |       0 | 8-226                
+  semester.ts      |       0 |        0 |       0 |       0 |                      
+-------------------|---------|----------|---------|---------|----------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.543 s
+Time:        2.12 s
 Ran all test suites.
