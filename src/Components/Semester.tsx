@@ -182,6 +182,14 @@ export function ViewSemester(): JSX.Element {
         /* ADD OTHER TYPES OF SEMESTERS LATER */
     }
 
+    //gets the courses for each semester
+    function getSemesterCourses(semester: string): Course[] {
+        const idx = index();
+        return semester === "Fall"
+            ? semesters[idx].courseList
+            : semesters[idx + 1].courseList;
+    }
+
     //function to display both semesters
     function displayBoth(): JSX.Element {
         // setTargetSem("Spring");
@@ -193,6 +201,8 @@ export function ViewSemester(): JSX.Element {
         // idx = index();
         // //an array of courses in the plan's semester (ex. fall of year 1)
         // const fallCourses = semesters[idx].courseList;
+        const fallCourses = getSemesterCourses("Fall");
+        const springCourses = getSemesterCourses("Spring");
 
         return (
             <div>
@@ -201,7 +211,7 @@ export function ViewSemester(): JSX.Element {
                         <DisplayFall
                             semesters={semesters}
                             setSemesters={setSemesters}
-                            targetSem={targetSem}
+                            targetSem="Fall"
                             setTargetSem={setTargetSem}
                             currCourse={currCourse}
                             setCurrCourse={setCurrCourse}
@@ -215,6 +225,7 @@ export function ViewSemester(): JSX.Element {
                             handleClose={handleClose}
                             handleShow={handleShow}
                             index={index}
+                            courses={fallCourses}
                         ></DisplayFall>
                     }
                 </div>
@@ -223,7 +234,7 @@ export function ViewSemester(): JSX.Element {
                         <DisplaySpring
                             semesters={semesters}
                             setSemesters={setSemesters}
-                            targetSem={targetSem}
+                            targetSem="Spring"
                             setTargetSem={setTargetSem}
                             currCourse={currCourse}
                             setCurrCourse={setCurrCourse}
@@ -237,6 +248,7 @@ export function ViewSemester(): JSX.Element {
                             handleClose={handleClose}
                             handleShow={handleShow}
                             index={index}
+                            courses={springCourses}
                         ></DisplaySpring>
                     }
                 </div>
@@ -246,6 +258,9 @@ export function ViewSemester(): JSX.Element {
 
     // function to handle displaying semesters
     function OneorTwo(): JSX.Element {
+        const fallCourses = getSemesterCourses("Fall");
+        const springCourses = getSemesterCourses("Spring");
+
         if (SemCount === 1 && targetSem === "Fall") {
             return (
                 <div className="Semester">
@@ -267,6 +282,7 @@ export function ViewSemester(): JSX.Element {
                             handleClose={handleClose}
                             handleShow={handleShow}
                             index={index}
+                            courses={fallCourses}
                         ></DisplayFall>
                     }
                 </div>
@@ -292,6 +308,7 @@ export function ViewSemester(): JSX.Element {
                             handleClose={handleClose}
                             handleShow={handleShow}
                             index={index}
+                            courses={springCourses}
                         ></DisplaySpring>
                     }
                 </div>

@@ -23,6 +23,7 @@ export interface valueProps {
     handleClose(): void;
     handleShow(): void;
     index(): number;
+    courses: Course[];
 }
 
 // function to display ONLY the fall semester
@@ -42,16 +43,18 @@ export function DisplayFall({
     clearSemesterCourses,
     handleClose,
     handleShow,
-    index
+    index,
+    courses
 }: valueProps): JSX.Element {
     // setTargetSem("Fall");
     const idx = index();
     //an array of courses in the plan's semester (ex. fall of year 1)
-    const fallCourses = semesters[idx].courseList;
+    // const fallCourses = semesters[idx].courseList;
+    const fallCourses = courses;
 
     React.useEffect(() => {
         setTargetSem("Fall");
-    }, []);
+    }, [targetSem]);
 
     return (
         <div className="Fall">

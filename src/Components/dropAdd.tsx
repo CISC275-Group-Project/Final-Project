@@ -25,7 +25,7 @@ export const DropAdd = ({
                         // eslint-disable-next-line no-extra-parens
                         Course_List.map((courseName: Course) => (
                             <option
-                                key={courseName.title}
+                                key={courseName.id}
                                 value={courseName.title}
                             >
                                 {courseName.title}
