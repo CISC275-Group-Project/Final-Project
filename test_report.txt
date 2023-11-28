@@ -13,510 +13,104 @@ FAIL src/App.test.tsx
   ● Console
 
     console.error
-      Warning: Cannot update a component (`ViewSemester`) while rendering a different component (`DisplayPlan`). To locate the bad setState() call inside `DisplayPlan`, follow the stack trace as described in https://reactjs.org/link/setstate-in-render
-          at DisplayPlan (/home/runner/work/Final-Project/Final-Project/src/Components/DisplayPlan.tsx:31:5)
+      Warning: Encountered two children with the same key, `-1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at DisplaySpring (/home/runner/work/Final-Project/Final-Project/src/Components/DisplaySpring.tsx:25:5)
+          at div
+          at div
+          at DisplayPlan (/home/runner/work/Final-Project/Final-Project/src/Components/DisplayPlan.tsx:14:5)
           at div
           at div
           at ViewSemester (/home/runner/work/Final-Project/Final-Project/src/Components/Semester.tsx:51:29)
           at div
           at App
 
-      229 |                     index={index}
-      230 |                 ></DisplayFall>
-    > 231 |                 {setTargetSem("Spring")}
-          |                  ^
-      232 |                 <DisplaySpring
-      233 |                     semesters={semesters}
-      234 |                     setSemesters={setSemesters}
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19102:14)
+
+    console.error
+      Warning: Encountered two children with the same key, `Breadth Requirement`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at select
+          at /home/runner/work/Final-Project/Final-Project/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+          at div
+          at /home/runner/work/Final-Project/Final-Project/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+          at DropAdd (/home/runner/work/Final-Project/Final-Project/src/Components/dropAdd.tsx:6:5)
+          at div
+          at div
+          at DisplaySpring (/home/runner/work/Final-Project/Final-Project/src/Components/DisplaySpring.tsx:25:5)
+          at div
+          at div
+          at DisplayPlan (/home/runner/work/Final-Project/Final-Project/src/Components/DisplayPlan.tsx:14:5)
+          at div
+          at div
+          at ViewSemester (/home/runner/work/Final-Project/Final-Project/src/Components/Semester.tsx:51:29)
+          at div
+          at App
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnAboutRenderPhaseUpdatesInDEV (node_modules/react-dom/cjs/react-dom.development.js:24002:15)
-      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:21836:3)
-      at setTargetSem (node_modules/react-dom/cjs/react-dom.development.js:16139:5)
-      at displayBoth (src/Components/Semester.tsx:231:18)
-      at DisplayPlan (src/Components/DisplayPlan.tsx:38:23)
-      at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      1
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Fall
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Fall returned is
-
-      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
-
-    console.log
-      0
-
-      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      1
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Fall
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Spring returned is
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
-
-    console.log
-      0
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      1
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Fall
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Fall returned is
-
-      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
-
-    console.log
-      0
-
-      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      1
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Fall
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Spring returned is
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
-
-    console.log
-      0
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      1
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Fall
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Fall returned is
-
-      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
-
-    console.log
-      0
-
-      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      1
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Fall
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Spring returned is
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
-
-    console.log
-      0
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      1
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Fall
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Fall returned is
-
-      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
-
-    console.log
-      0
-
-      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      1
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Fall
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Spring returned is
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
-
-    console.log
-      0
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      4
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Spring
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Fall returned is
-
-      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
-
-    console.log
-      5
-
-      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      4
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Spring
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Spring returned is
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
-
-    console.log
-      5
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      4
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Spring
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Fall returned is
-
-      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
-
-    console.log
-      5
-
-      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      4
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Spring
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Spring returned is
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
-
-    console.log
-      5
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      4
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Spring
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Fall returned is
-
-      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
-
-    console.log
-      5
-
-      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      4
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Spring
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Spring returned is
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
-
-    console.log
-      5
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      4
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Spring
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Fall returned is
-
-      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
-
-    console.log
-      5
-
-      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
-
-    console.log
-      target year is (in the index func):
-
-      at index (src/Components/Semester.tsx:74:17)
-
-    console.log
-      4
-
-      at index (src/Components/Semester.tsx:75:17)
-
-    console.log
-      target sem is (in the index func):
-
-      at index (src/Components/Semester.tsx:76:17)
-
-    console.log
-      Spring
-
-      at index (src/Components/Semester.tsx:77:17)
-
-    console.log
-      idx in Spring returned is
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
-
-    console.log
-      5
-
-      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19080:14)
+
+    console.error
+      Warning: Encountered two children with the same key, `-2`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at DisplaySpring (/home/runner/work/Final-Project/Final-Project/src/Components/DisplaySpring.tsx:25:5)
+          at div
+          at div
+          at DisplayPlan (/home/runner/work/Final-Project/Final-Project/src/Components/DisplayPlan.tsx:14:5)
+          at div
+          at div
+          at ViewSemester (/home/runner/work/Final-Project/Final-Project/src/Components/Semester.tsx:51:29)
+          at div
+          at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19102:14)
+
+    console.error
+      Warning: Encountered two children with the same key, `Free Elective`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at select
+          at /home/runner/work/Final-Project/Final-Project/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+          at div
+          at /home/runner/work/Final-Project/Final-Project/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+          at DropAdd (/home/runner/work/Final-Project/Final-Project/src/Components/dropAdd.tsx:6:5)
+          at div
+          at div
+          at DisplaySpring (/home/runner/work/Final-Project/Final-Project/src/Components/DisplaySpring.tsx:25:5)
+          at div
+          at div
+          at DisplayPlan (/home/runner/work/Final-Project/Final-Project/src/Components/DisplayPlan.tsx:14:5)
+          at div
+          at div
+          at ViewSemester (/home/runner/work/Final-Project/Final-Project/src/Components/Semester.tsx:51:29)
+          at div
+          at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19080:14)
 
   ● renders the fall semester type
 
@@ -527,19 +121,19 @@ FAIL src/App.test.tsx
     Ignored nodes: comments, <script />, <style />
     [36m<h1>[39m
       [0mFall Year [0m
-      [0m4[0m
+      [0m1[0m
     [36m</h1>[39m
 
     Ignored nodes: comments, <script />, <style />
     [36m<h1>[39m
       [0mFall Year [0m
-      [0m4[0m
+      [0m2[0m
     [36m</h1>[39m
 
     Ignored nodes: comments, <script />, <style />
     [36m<h1>[39m
       [0mFall Year [0m
-      [0m4[0m
+      [0m3[0m
     [36m</h1>[39m
 
     Ignored nodes: comments, <script />, <style />
@@ -559,21 +153,10 @@ FAIL src/App.test.tsx
           [36m<header[39m
             [33mclass[39m=[32m"App-header"[39m
           [36m>[39m
-            [0mUD CISC275 - Degree Planner[0m
+            [0m📃 UD Degree Planner[0m
+            [36m<h6 />[39m
             [36m<h6>[39m
-              [0mMatthew Mestre[0m
-            [36m</h6>[39m
-            [36m<h6>[39m
-              [0mBryant Ferguson[0m
-            [36m</h6>[39m
-            [36m<h6>[39m
-              [0mAva West[0m
-            [36m</h6>[39m
-            [36m<h6>[39m
-              [0mMalika Iyer[0m
-            [36m</h6>[39m
-            [36m<h6>[39m
-              [0mDina Dawood[0m
+              [0mMade by: Matthew Mestre, Bryant Ferguson, Ava West, Malika Iyer and Dina Dawood (CISC275)[0m
             [36m</h6>[39m
           [36m</header>[39m
           [36m<hr />[39m
@@ -597,19 +180,19 @@ FAIL src/App.test.tsx
           [36m<hr />[39m
           [36m<div>[39m
             [36m<div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mShow One Semester[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mShow Different Semester[0m
-              [36m</button>[39m
               [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mShow One Semester[0m
+                [36m</button>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mShow Different Semester[0m
+                [36m</button>[39m
                 [36m<div[39m
                   [33mclass[39m=[32m"Semester"[39m
                 [36m>[39m
@@ -618,51 +201,51 @@ FAIL src/App.test.tsx
                   [36m>[39m
                     [36m<h1>[39m
                       [0mFall Year [0m
-                      [0m4[0m
+                      [0m1[0m
                     [36m</h1>[39m
                     [36m<div[39m
                       [33mclass[39m=[32m"Course"[39m
                     [36m>[39m
                       [36m<span>[39m
-                        [0mCISC303[0m
+                        [0mENGL110[0m
                         [0m - [0m
-                        [0mAutomata Theory[0m
+                        [0mFirst-Year Writing[0m
                       [36m</span>[39m
                     [36m</div>[39m
                     [36m<div[39m
                       [33mclass[39m=[32m"Course"[39m
                     [36m>[39m
                       [36m<span>[39m
-                        [0mCISC481[0m
+                        [0mCISC108[0m
                         [0m - [0m
-                        [0mArtifical Intelligence[0m
+                        [0mIntroduction to Computer Science I[0m
                       [36m</span>[39m
                     [36m</div>[39m
                     [36m<div[39m
                       [33mclass[39m=[32m"Course"[39m
                     [36m>[39m
                       [36m<span>[39m
-                        [0mFree Elective[0m
+                        [0mMATH241[0m
                         [0m - [0m
-                        [0m[0m
+                        [0mAnalytical Geometry and Calculus A[0m
                       [36m</span>[39m
                     [36m</div>[39m
                     [36m<div[39m
                       [33mclass[39m=[32m"Course"[39m
                     [36m>[39m
                       [36m<span>[39m
-                        [0mRestricted Electives[0m
+                        [0mEGGG101[0m
                         [0m - [0m
-                        [0m[0m
+                        [0mIntroduction to Engineering[0m
                       [36m</span>[39m
                     [36m</div>[39m
                     [36m<div[39m
                       [33mclass[39m=[32m"Course"[39m
                     [36m>[39m
                       [36m<span>[39m
-                        [0mEnglish Requirement[0m
+                        [0mBreadth Requirement[0m
                         [0m - [0m
-                        [0m[0m
+                        [0mThis is something we will have to have the user select what requirement they want. Each course will have a different requirement.[0m
                       [36m</span>[39m
                     [36m</div>[39m
                     [36m<div>[39m
@@ -678,29 +261,29 @@ FAIL src/App.test.tsx
                           [33mid[39m=[32m"currentCourse"[39m
                         [36m>[39m
                           [36m<option[39m
-                            [33mvalue[39m=[32m"CISC303"[39m
+                            [33mvalue[39m=[32m"ENGL110"[39m
                           [36m>[39m
-                            [0mCISC303[0m
+                            [0mENGL110[0m
                           [36m</option>[39m
                           [36m<option[39m
-                            [33mvalue[39m=[32m"CISC481"[39m
+                            [33mvalue[39m=[32m"CISC108"[39m
                           [36m>[39m
-                            [0mCISC481[0m
+                            [0mCISC108[0m
                           [36m</option>[39m
                           [36m<option[39m
-                            [33mvalue[39m=[32m"Free Elective"[39m
+                            [33mvalue[39m=[32m"MATH241"[39m
                           [36m>[39m
-                            [0mFree Elective[0m
+                            [0mMATH241[0m
                           [36m</option>[39m
                           [36m<option[39m
-                            [33mvalue[39m=[32m"Restricted Electives"[39m
+                            [33mvalue[39m=[32m"EGGG101"[39m
                           [36m>[39m
-                            [0mRestricted Electives[0m
+                            [0mEGGG101[0m
                           [36m</option>[39m
                           [36m<option[39m
-                            [33mvalue[39m=[32m"English Requirement"[39m
+                            [33mvalue[39m=[32m"Breadth Requirement"[39m
                           [36m>[39m
-                            [0mEnglish Requirement[0m
+                            [0mBreadth Requirement[0m
                           [36m</option>[39m
                         [36m</select>[39m
                       [36m</div>[39m
@@ -729,7 +312,8 @@ FAIL src/App.test.tsx
                       [36m<div />[39m
                     [36m</div>[39m
                   [36m</div>[39m
-         ...
+                  [36m<div[39m
+                    [33...
 
       17 | test("renders the fall semester type", () => {
       18 |     render(<App />);
@@ -749,16 +333,16 @@ FAIL src/App.test.tsx
 -----------------------|---------|----------|---------|---------|-------------------------------------------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                     
 -----------------------|---------|----------|---------|---------|-------------------------------------------------------
-All files              |   49.48 |     53.7 |   49.31 |   49.82 |                                                       
+All files              |   49.65 |    68.29 |   44.77 |      50 |                                                       
  src                   |     100 |      100 |     100 |     100 |                                                       
   App.tsx              |     100 |      100 |     100 |     100 |                                                       
- src/Components        |   53.75 |     53.7 |   48.61 |   54.19 |                                                       
+ src/Components        |   53.99 |    68.29 |   43.93 |   54.44 |                                                       
   CourseEdit.tsx       |       0 |      100 |       0 |       0 | 17-72                                                 
   DisplayFall.tsx      |     100 |      100 |     100 |     100 |                                                       
   DisplayPlan.tsx      |     100 |      100 |     100 |     100 |                                                       
   DisplaySpring.tsx    |     100 |      100 |     100 |     100 |                                                       
   Requirements.tsx     |       0 |        0 |       0 |       0 |                                                       
-  Semester.tsx         |   36.95 |    38.88 |   19.04 |   36.95 | 67,82,117-194,318-322,327-328,333-338,342-351,397-399 
+  Semester.tsx         |   44.55 |    73.91 |   19.04 |   44.55 | 69,98-173,215,338-342,347-348,353-358,362-371,413-415 
   clearingCourse.tsx   |       0 |        0 |       0 |       0 | 20-28                                                 
   clearingSemester.tsx |     100 |      100 |     100 |     100 |                                                       
   course.tsx           |   43.47 |       25 |   44.44 |    40.9 | 46,48,60-86                                           
@@ -775,5 +359,5 @@ All files              |   49.48 |     53.7 |   49.31 |   49.82 |
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
-Time:        3.747 s
+Time:        3.702 s
 Ran all test suites.
