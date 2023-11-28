@@ -9,35 +9,771 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 PASS src/Components/course.test.tsx
-PASS src/App.test.tsx
------------------------|---------|----------|---------|---------|------------------------------------------------------------------
-File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                
------------------------|---------|----------|---------|---------|------------------------------------------------------------------
-All files              |   39.13 |       35 |      40 |   39.32 |                                                                  
- src                   |     100 |      100 |     100 |     100 |                                                                  
-  App.tsx              |     100 |      100 |     100 |     100 |                                                                  
- src/Components        |   42.33 |       35 |   39.13 |   42.59 |                                                                  
-  CourseEdit.tsx       |       0 |      100 |       0 |       0 | 17-72                                                            
-  DisplayFall.tsx      |     100 |      100 |     100 |     100 |                                                                  
-  DisplaySpring.tsx    |       0 |      100 |       0 |       0 | 48-62                                                            
-  Requirements.tsx     |       0 |        0 |       0 |       0 |                                                                  
-  Semester.tsx         |   25.64 |    13.63 |   17.39 |   25.64 | 67,77-96,104-197,274-314,326-330,335-336,341-346,350-359,400-402 
-  clearingCourse.tsx   |       0 |        0 |       0 |       0 | 20-28                                                            
-  clearingSemester.tsx |     100 |      100 |     100 |     100 |                                                                  
-  course.tsx           |   43.47 |       25 |   44.44 |    40.9 | 46,48,60-86                                                      
-  draggingCourses.tsx  |       0 |        0 |       0 |       0 |                                                                  
-  dragndrop.tsx        |       0 |        0 |       0 |       0 | 5-59                                                             
-  dropAdd.tsx          |     100 |      100 |     100 |     100 |                                                                  
-  plan.tsx             |     100 |      100 |     100 |     100 |                                                                  
- src/Interfaces        |       0 |      100 |     100 |       0 |                                                                  
-  course.ts            |       0 |        0 |       0 |       0 |                                                                  
-  plan.ts              |       0 |        0 |       0 |       0 |                                                                  
-  requirements.ts      |       0 |      100 |     100 |       0 | 8-226                                                            
-  semester.ts          |       0 |        0 |       0 |       0 |                                                                  
------------------------|---------|----------|---------|---------|------------------------------------------------------------------
+FAIL src/App.test.tsx
+  ● Console
 
-Test Suites: 2 passed, 2 total
-Tests:       2 passed, 2 total
+    console.error
+      Warning: Cannot update a component (`ViewSemester`) while rendering a different component (`DisplayPlan`). To locate the bad setState() call inside `DisplayPlan`, follow the stack trace as described in https://reactjs.org/link/setstate-in-render
+          at DisplayPlan (/home/runner/work/Final-Project/Final-Project/src/Components/DisplayPlan.tsx:31:5)
+          at div
+          at div
+          at ViewSemester (/home/runner/work/Final-Project/Final-Project/src/Components/Semester.tsx:51:29)
+          at div
+          at App
+
+      229 |                     index={index}
+      230 |                 ></DisplayFall>
+    > 231 |                 {setTargetSem("Spring")}
+          |                  ^
+      232 |                 <DisplaySpring
+      233 |                     semesters={semesters}
+      234 |                     setSemesters={setSemesters}
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnAboutRenderPhaseUpdatesInDEV (node_modules/react-dom/cjs/react-dom.development.js:24002:15)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:21836:3)
+      at setTargetSem (node_modules/react-dom/cjs/react-dom.development.js:16139:5)
+      at displayBoth (src/Components/Semester.tsx:231:18)
+      at DisplayPlan (src/Components/DisplayPlan.tsx:38:23)
+      at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      1
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Fall
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Fall returned is
+
+      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
+
+    console.log
+      0
+
+      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      1
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Fall
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Spring returned is
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
+
+    console.log
+      0
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      1
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Fall
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Fall returned is
+
+      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
+
+    console.log
+      0
+
+      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      1
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Fall
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Spring returned is
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
+
+    console.log
+      0
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      1
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Fall
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Fall returned is
+
+      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
+
+    console.log
+      0
+
+      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      1
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Fall
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Spring returned is
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
+
+    console.log
+      0
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      1
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Fall
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Fall returned is
+
+      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
+
+    console.log
+      0
+
+      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      1
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Fall
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Spring returned is
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
+
+    console.log
+      0
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      4
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Spring
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Fall returned is
+
+      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
+
+    console.log
+      5
+
+      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      4
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Spring
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Spring returned is
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
+
+    console.log
+      5
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      4
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Spring
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Fall returned is
+
+      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
+
+    console.log
+      5
+
+      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      4
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Spring
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Spring returned is
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
+
+    console.log
+      5
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      4
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Spring
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Fall returned is
+
+      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
+
+    console.log
+      5
+
+      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      4
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Spring
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Spring returned is
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
+
+    console.log
+      5
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      4
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Spring
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Fall returned is
+
+      at DisplayFall (src/Components/DisplayFall.tsx:56:13)
+
+    console.log
+      5
+
+      at DisplayFall (src/Components/DisplayFall.tsx:57:13)
+
+    console.log
+      target year is (in the index func):
+
+      at index (src/Components/Semester.tsx:74:17)
+
+    console.log
+      4
+
+      at index (src/Components/Semester.tsx:75:17)
+
+    console.log
+      target sem is (in the index func):
+
+      at index (src/Components/Semester.tsx:76:17)
+
+    console.log
+      Spring
+
+      at index (src/Components/Semester.tsx:77:17)
+
+    console.log
+      idx in Spring returned is
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:56:13)
+
+    console.log
+      5
+
+      at DisplaySpring (src/Components/DisplaySpring.tsx:57:13)
+
+  ● renders the fall semester type
+
+    TestingLibraryElementError: Found multiple elements with the text: /Fall/i
+
+    Here are the matching elements:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<h1>[39m
+      [0mFall Year [0m
+      [0m4[0m
+    [36m</h1>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<h1>[39m
+      [0mFall Year [0m
+      [0m4[0m
+    [36m</h1>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<h1>[39m
+      [0mFall Year [0m
+      [0m4[0m
+    [36m</h1>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<h1>[39m
+      [0mFall Year [0m
+      [0m4[0m
+    [36m</h1>[39m
+
+    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CISC275 - Degree Planner[0m
+            [36m<h6>[39m
+              [0mMatthew Mestre[0m
+            [36m</h6>[39m
+            [36m<h6>[39m
+              [0mBryant Ferguson[0m
+            [36m</h6>[39m
+            [36m<h6>[39m
+              [0mAva West[0m
+            [36m</h6>[39m
+            [36m<h6>[39m
+              [0mMalika Iyer[0m
+            [36m</h6>[39m
+            [36m<h6>[39m
+              [0mDina Dawood[0m
+            [36m</h6>[39m
+          [36m</header>[39m
+          [36m<hr />[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"btn btn-info "[39m
+            [33mdata-bs-target[39m=[32m"#welcome_message"[39m
+            [33mdata-bs-toggle[39m=[32m"collapse"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mNeed Help❓[0m
+          [36m</button>[39m
+          [36m<hr />[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"collapse"[39m
+            [33mid[39m=[32m"welcome_message"[39m
+          [36m>[39m
+            [36m<p>[39m
+              [0mWelcome to your personal Degree Planner! Some basic tools have been designed to make your visit accessible to your needs; this includes creating new plans from scratch and/or compiling data from a csv file. You will be able to add, remove, edit, and save various courses/semesters in a multitude of plans. Scroll to the bottom of the page for more instructions (will enhance later by making an expandable/disposable button near the top of the page).[0m
+            [36m</p>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mShow One Semester[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mShow Different Semester[0m
+              [36m</button>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Semester"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"Fall"[39m
+                  [36m>[39m
+                    [36m<h1>[39m
+                      [0mFall Year [0m
+                      [0m4[0m
+                    [36m</h1>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"Course"[39m
+                    [36m>[39m
+                      [36m<span>[39m
+                        [0mCISC303[0m
+                        [0m - [0m
+                        [0mAutomata Theory[0m
+                      [36m</span>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"Course"[39m
+                    [36m>[39m
+                      [36m<span>[39m
+                        [0mCISC481[0m
+                        [0m - [0m
+                        [0mArtifical Intelligence[0m
+                      [36m</span>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"Course"[39m
+                    [36m>[39m
+                      [36m<span>[39m
+                        [0mFree Elective[0m
+                        [0m - [0m
+                        [0m[0m
+                      [36m</span>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"Course"[39m
+                    [36m>[39m
+                      [36m<span>[39m
+                        [0mRestricted Electives[0m
+                        [0m - [0m
+                        [0m[0m
+                      [36m</span>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"Course"[39m
+                    [36m>[39m
+                      [36m<span>[39m
+                        [0mEnglish Requirement[0m
+                        [0m - [0m
+                        [0m[0m
+                      [36m</span>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [36m<div>[39m
+                        [36m<label[39m
+                          [33mclass[39m=[32m"form-label"[39m
+                          [33mfor[39m=[32m"currentCourse"[39m
+                        [36m>[39m
+                          [0mSelect A Course[0m
+                        [36m</label>[39m
+                        [36m<select[39m
+                          [33mclass[39m=[32m"form-select"[39m
+                          [33mid[39m=[32m"currentCourse"[39m
+                        [36m>[39m
+                          [36m<option[39m
+                            [33mvalue[39m=[32m"CISC303"[39m
+                          [36m>[39m
+                            [0mCISC303[0m
+                          [36m</option>[39m
+                          [36m<option[39m
+                            [33mvalue[39m=[32m"CISC481"[39m
+                          [36m>[39m
+                            [0mCISC481[0m
+                          [36m</option>[39m
+                          [36m<option[39m
+                            [33mvalue[39m=[32m"Free Elective"[39m
+                          [36m>[39m
+                            [0mFree Elective[0m
+                          [36m</option>[39m
+                          [36m<option[39m
+                            [33mvalue[39m=[32m"Restricted Electives"[39m
+                          [36m>[39m
+                            [0mRestricted Electives[0m
+                          [36m</option>[39m
+                          [36m<option[39m
+                            [33mvalue[39m=[32m"English Requirement"[39m
+                          [36m>[39m
+                            [0mEnglish Requirement[0m
+                          [36m</option>[39m
+                        [36m</select>[39m
+                      [36m</div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mRemove Class[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mAdd Class[0m
+                      [36m</button>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"clear_sem"[39m
+                      [36m>[39m
+                        [36m<button[39m
+                          [33mclass[39m=[32m"btn btn-primary"[39m
+                          [33mtype[39m=[32m"button"[39m
+                        [36m>[39m
+                          [0mRemove All Courses[0m
+                        [36m</button>[39m
+                      [36m</div>[39m
+                      [36m<div />[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+         ...
+
+      17 | test("renders the fall semester type", () => {
+      18 |     render(<App />);
+    > 19 |     const FallSem = screen.getByText(/Fall/i);
+         |                            ^
+      20 |     expect(FallSem).toBeInTheDocument();
+      21 | });
+      22 |
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
+      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:19:28)
+
+-----------------------|---------|----------|---------|---------|-------------------------------------------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                     
+-----------------------|---------|----------|---------|---------|-------------------------------------------------------
+All files              |   49.48 |     53.7 |   49.31 |   49.82 |                                                       
+ src                   |     100 |      100 |     100 |     100 |                                                       
+  App.tsx              |     100 |      100 |     100 |     100 |                                                       
+ src/Components        |   53.75 |     53.7 |   48.61 |   54.19 |                                                       
+  CourseEdit.tsx       |       0 |      100 |       0 |       0 | 17-72                                                 
+  DisplayFall.tsx      |     100 |      100 |     100 |     100 |                                                       
+  DisplayPlan.tsx      |     100 |      100 |     100 |     100 |                                                       
+  DisplaySpring.tsx    |     100 |      100 |     100 |     100 |                                                       
+  Requirements.tsx     |       0 |        0 |       0 |       0 |                                                       
+  Semester.tsx         |   36.95 |    38.88 |   19.04 |   36.95 | 67,82,117-194,318-322,327-328,333-338,342-351,397-399 
+  clearingCourse.tsx   |       0 |        0 |       0 |       0 | 20-28                                                 
+  clearingSemester.tsx |     100 |      100 |     100 |     100 |                                                       
+  course.tsx           |   43.47 |       25 |   44.44 |    40.9 | 46,48,60-86                                           
+  draggingCourses.tsx  |       0 |        0 |       0 |       0 |                                                       
+  dragndrop.tsx        |       0 |        0 |       0 |       0 | 5-59                                                  
+  dropAdd.tsx          |     100 |      100 |     100 |     100 |                                                       
+  plan.tsx             |     100 |      100 |     100 |     100 |                                                       
+ src/Interfaces        |       0 |      100 |     100 |       0 |                                                       
+  course.ts            |       0 |        0 |       0 |       0 |                                                       
+  plan.ts              |       0 |        0 |       0 |       0 |                                                       
+  requirements.ts      |       0 |      100 |     100 |       0 | 8-226                                                 
+  semester.ts          |       0 |        0 |       0 |       0 |                                                       
+-----------------------|---------|----------|---------|---------|-------------------------------------------------------
+Test Suites: 1 failed, 1 passed, 2 total
+Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
-Time:        3.413 s
+Time:        3.747 s
 Ran all test suites.
