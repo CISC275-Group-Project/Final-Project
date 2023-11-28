@@ -47,14 +47,19 @@ export function DisplaySpring({
     courses
 }: valueProps): JSX.Element {
     // setTargetSem("Spring");
-    const idx = index();
     //an array of courses in the plan's semester (ex. spring of year 1)
     // const springCourses = semesters[idx].courseList;
-    const springCourses = courses;
 
     React.useEffect(() => {
         setTargetSem("Spring");
     }, [targetSem]);
+
+    const idx = index();
+
+    // const springCourses = semesters[idx].courseList;
+    const springCourses = courses;
+    console.log("idx in Spring returned is");
+    console.log(idx);
 
     return (
         <div className="Spring">

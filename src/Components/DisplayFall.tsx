@@ -46,15 +46,20 @@ export function DisplayFall({
     index,
     courses
 }: valueProps): JSX.Element {
-    // setTargetSem("Fall");
-    const idx = index();
+    //setTargetSem("Fall");
     //an array of courses in the plan's semester (ex. fall of year 1)
     // const fallCourses = semesters[idx].courseList;
-    const fallCourses = courses;
 
     React.useEffect(() => {
         setTargetSem("Fall");
     }, [targetSem]);
+
+    const idx = index();
+
+    // const fallCourses = semesters[idx].courseList;
+    const fallCourses = courses;
+    console.log("idx in Fall returned is");
+    console.log(idx);
 
     return (
         <div className="Fall">
