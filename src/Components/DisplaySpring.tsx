@@ -21,18 +21,15 @@ export interface valueProps {
     clearSemesterCourses(): void;
     handleClose(): void;
     handleShow(): void;
-    index(expression: number): number;
+    index(targetYear: number, targetSem: string): number;
 }
 
 // function to display ONLY the fall semester
 export function DisplaySpring({
     semesters,
-    setSemesters,
     targetSem,
     currCourse,
-    setCurrCourse,
     clicked,
-    setClicked,
     targetYear,
     dropClass,
     addClass,
@@ -46,7 +43,7 @@ export function DisplaySpring({
     //an array of courses in the plan's semester (ex. spring of year 1)
 
     targetSem = "Spring";
-    const idx = index(targetYear);
+    const idx = index(targetYear, targetSem);
 
     const springCourses = semesters[idx].courseList;
     console.log("idx in Spring returned is");

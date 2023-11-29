@@ -21,7 +21,7 @@ export interface valueProps {
     clearSemesterCourses(): void;
     handleClose(): void;
     handleShow(): void;
-    index(expression: number): number;
+    index(targetYear: number, targetSem: string): number;
 }
 
 // function to display ONLY the fall semester
@@ -46,7 +46,7 @@ export function DisplayFall({
     //an array of courses in the plan's semester (ex. fall of year 1)
 
     targetSem = "Fall";
-    const idx = index(targetYear);
+    const idx = index(targetYear, targetSem);
 
     const fallCourses = semesters[idx].courseList;
     console.log("idx in Fall returned is");
