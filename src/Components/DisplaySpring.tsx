@@ -10,7 +10,6 @@ export interface valueProps {
     semesters: Semester[];
     setSemesters: (expression: Semester[]) => void;
     targetSem: string;
-    setTargetSem: (expression: string) => void;
     currCourse: string;
     setCurrCourse: (expression: string) => void;
     clicked: boolean;
@@ -22,7 +21,7 @@ export interface valueProps {
     clearSemesterCourses(): void;
     handleClose(): void;
     handleShow(): void;
-    index(): number;
+    index(expression: number): number;
 }
 
 // function to display ONLY the fall semester
@@ -30,7 +29,6 @@ export function DisplaySpring({
     semesters,
     setSemesters,
     targetSem,
-    setTargetSem,
     currCourse,
     setCurrCourse,
     clicked,
@@ -46,11 +44,9 @@ export function DisplaySpring({
 }: valueProps): JSX.Element {
     // setTargetSem("Spring");
     //an array of courses in the plan's semester (ex. spring of year 1)
-    React.useEffect(() => {
-        setTargetSem("Spring");
-    }, [targetSem]);
 
-    const idx = index();
+    targetSem = "Spring";
+    const idx = index(targetYear);
 
     const springCourses = semesters[idx].courseList;
     console.log("idx in Spring returned is");
