@@ -29,27 +29,42 @@ FAIL src/App.test.tsx
               [0mMade by: Matthew Mestre, Bryant Ferguson, Ava West, Malika Iyer and Dina Dawood (CISC275)[0m
             [36m</h6>[39m
           [36m</header>[39m
-          [36m<hr />[39m
-          [36m<button[39m
-            [33mclass[39m=[32m"btn btn-info "[39m
-            [33mdata-bs-target[39m=[32m"#welcome_message"[39m
-            [33mdata-bs-toggle[39m=[32m"collapse"[39m
-            [33mtype[39m=[32m"button"[39m
-          [36m>[39m
-            [0mNeed Help❓[0m
-          [36m</button>[39m
-          [36m<hr />[39m
           [36m<div[39m
-            [33mclass[39m=[32m"collapse"[39m
-            [33mid[39m=[32m"welcome_message"[39m
+            [33mstyle[39m=[32m"background-color: rgb(240, 239, 244); padding: 20px;"[39m
           [36m>[39m
-            [36m<p>[39m
-              [0mWelcome to your personal Degree Planner! Some basic tools have been designed to make your visit accessible to your needs; this includes creating new plans from scratch and/or compiling data from a csv file. You will be able to add, remove, edit, and save various courses/semesters in a multitude of plans. You will be able to view 1 semester at a time or multiple semesters at once. You will also be able to add or remove new courses to each semester, and also add and delete a plan entirely. You can also skip a semester. There a templates for each concentration that you can work on and there are many options to choose from when creating your plan.[0m
-            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-info "[39m
+              [33mdata-bs-target[39m=[32m"#welcome_message"[39m
+              [33mdata-bs-toggle[39m=[32m"collapse"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mNeed Help❓[0m
+            [36m</button>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"collapse"[39m
+              [33mid[39m=[32m"welcome_message"[39m
+            [36m>[39m
+              [36m<p[39m
+                [33mstyle[39m=[32m"padding: 20px;"[39m
+              [36m>[39m
+                [0mWelcome to your personal Degree Planner! Some basic tools have been designed to make your visit accessible to your to your needs; this includes creating new plans from scratch and/or compiling data from a csv file. You will be able to add, remove, edit, and save various courses/semesters in a multitude of plans. You will be able to view 1 semester at a time or multiple semesters at once. You will also be able to add or remove new courses to each semester, and also add and delete a plan entirely. You can also skip a semester. There a a templates for each concentration that you can work on and there are many options to choose from when creating your plan.[0m
+              [36m</p>[39m
+            [36m</div>[39m
           [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"background-color: rgb(15, 35, 76);"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"DropdownMenu"[39m
+            [36m>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mstyle[39m=[32m"background-color: rgb(239, 91, 91); border-color: #922424; margin: 5px 5px 5px 5px; color: black;"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mStart New Plan[0m
+              [36m</button>[39m
+              [36m<hr />[39m
               [36m<div[39m
                 [33mclass[39m=[32m"dropdown"[39m
               [36m>[39m
@@ -57,14 +72,45 @@ FAIL src/App.test.tsx
                   [33maria-expanded[39m=[32m"false"[39m
                   [33mclass[39m=[32m"dropdown-toggle btn btn-primary"[39m
                   [33mid[39m=[32m"dropdown1"[39m
+                  [33mstyle[39m=[32m"background-color: rgb(255, 186, 73); border-color: darkgoldenrod; margin: 5px 5px 5px 5px; color: black;"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mSave Plan Into:[0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"dropdown"[39m
+              [36m>[39m
+                [36m<button[39m
+                  [33maria-expanded[39m=[32m"false"[39m
+                  [33mclass[39m=[32m"dropdown-toggle btn btn-primary"[39m
+                  [33mid[39m=[32m"dropdown2"[39m
+                  [33mstyle[39m=[32m"background-color: rgb(153, 143, 199); border-color: #3e3568; margin: 5px 5px 5px 5px; color: black;"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mLoad:[0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"dropdown"[39m
+              [36m>[39m
+                [36m<button[39m
+                  [33maria-expanded[39m=[32m"false"[39m
+                  [33mclass[39m=[32m"dropdown-toggle btn btn-primary"[39m
+                  [33mid[39m=[32m"dropdown3"[39m
+                  [33mstyle[39m=[32m"background-color: rgb(216, 219, 226); border-color: #2c4d9b; margin: 5px 5px 5px 5px; color: black;"[39m
                   [33mtype[39m=[32m"button"[39m
                 [36m>[39m
                   [0mPick a Plan:[0m
                 [36m</button>[39m
               [36m</div>[39m
-              [36m<hr />[39m
             [36m</div>[39m
-            [36m<hr />[39m
+            [36m<hr[39m
+              [33mstyle[39m=[32m"background-color: rgb(15, 35, 76);"[39m
+            [36m/>[39m
+            [36m<hr[39m
+              [33mstyle[39m=[32m"background-color: rgb(15, 35, 76);"[39m
+            [36m/>[39m
           [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
@@ -84,39 +130,41 @@ FAIL src/App.test.tsx
       at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
       at Object.<anonymous> (src/App.test.tsx:19:28)
 
------------------------|---------|----------|---------|---------|----------------------------------------------------
-File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                  
------------------------|---------|----------|---------|---------|----------------------------------------------------
-All files              |   42.88 |    22.11 |    29.7 |   43.38 |                                                    
- src                   |     100 |      100 |     100 |     100 |                                                    
-  App.tsx              |     100 |      100 |     100 |     100 |                                                    
- src/Components        |   44.93 |    22.11 |      29 |   45.49 |                                                    
-  AI_Plan.tsx          |     100 |      100 |     100 |     100 |                                                    
-  CourseEdit.tsx       |       0 |      100 |       0 |       0 | 17-72                                              
-  Cyber_Plan.tsx       |     100 |      100 |     100 |     100 |                                                    
-  DisplayFall.tsx      |       0 |      100 |       0 |       0 | 41-59                                              
-  DisplayPlan.tsx      |       0 |        0 |       0 |       0 | 16-168                                             
-  DisplaySpring.tsx    |       0 |      100 |       0 |       0 | 41-60                                              
-  DisplaySummer.tsx    |       0 |      100 |       0 |       0 | 40-49                                              
-  DisplayWinter.tsx    |       0 |      100 |       0 |       0 | 40-49                                              
-  Requirements.tsx     |       0 |        0 |       0 |       0 |                                                    
-  Semester.tsx         |      20 |     0.98 |    9.09 |      20 | 74-288,293-297,302-303,308-313,317-326,336-347,366 
-  SysNet_Plan.tsx      |     100 |      100 |     100 |     100 |                                                    
-  clearingCourse.tsx   |       0 |        0 |       0 |       0 | 20-28                                              
-  clearingSemester.tsx |      50 |      100 |       0 |      50 | 15                                                 
-  course.tsx           |   43.47 |       25 |   44.44 |    40.9 | 46,48,60-86                                        
-  draggingCourses.tsx  |       0 |        0 |       0 |       0 |                                                    
-  dragndrop.tsx        |       0 |        0 |       0 |       0 | 5-59                                               
-  dropAdd.tsx          |      20 |      100 |       0 |      20 | 20-65                                              
-  plan.tsx             |     100 |      100 |     100 |     100 |                                                    
- src/Interfaces        |       0 |      100 |     100 |       0 |                                                    
-  course.ts            |       0 |        0 |       0 |       0 |                                                    
-  plan.ts              |       0 |        0 |       0 |       0 |                                                    
-  requirements.ts      |       0 |      100 |     100 |       0 | 8-226                                              
-  semester.ts          |       0 |        0 |       0 |       0 |                                                    
------------------------|---------|----------|---------|---------|----------------------------------------------------
+------------------------|---------|----------|---------|---------|-------------------------------------------------------------
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                           
+------------------------|---------|----------|---------|---------|-------------------------------------------------------------
+All files               |   39.33 |    21.53 |   31.53 |   39.76 |                                                             
+ src                    |     100 |      100 |     100 |     100 |                                                             
+  App.tsx               |     100 |      100 |     100 |     100 |                                                             
+ src/Components         |   16.61 |     2.38 |   12.64 |   16.71 |                                                             
+  CourseEdit.tsx        |       0 |      100 |       0 |       0 | 17-72                                                       
+  DisplayFall.tsx       |       0 |      100 |       0 |       0 | 41-59                                                       
+  DisplayPlan.tsx       |       0 |        0 |       0 |       0 | 17-221                                                      
+  DisplaySpring.tsx     |       0 |      100 |       0 |       0 | 41-60                                                       
+  DisplaySummer.tsx     |       0 |      100 |       0 |       0 | 40-49                                                       
+  DisplayWinter.tsx     |       0 |      100 |       0 |       0 | 40-49                                                       
+  Requirements.tsx      |       0 |        0 |       0 |       0 |                                                             
+  Semester.tsx          |   21.34 |      0.9 |   13.79 |   21.34 | 100-314,319-323,328-329,334-339,343-352,364-408,451,480,509 
+  clearingCourse.tsx    |       0 |        0 |       0 |       0 | 20-28                                                       
+  clearingSemester.tsx  |      50 |      100 |       0 |      50 | 15                                                          
+  course.tsx            |   43.47 |       25 |   44.44 |    40.9 | 46,48,60-86                                                 
+  draggingCourses.tsx   |       0 |        0 |       0 |       0 |                                                             
+  dragndrop.tsx         |       0 |        0 |       0 |       0 | 5-59                                                        
+  dropAdd.tsx           |      20 |      100 |       0 |      20 | 20-65                                                       
+  useSessionStorage.tsx |    87.5 |       50 |     100 |    87.5 | 8                                                           
+ src/Components/Plans   |     100 |      100 |     100 |     100 |                                                             
+  AI_Plan.tsx           |     100 |      100 |     100 |     100 |                                                             
+  Cyber_Plan.tsx        |     100 |      100 |     100 |     100 |                                                             
+  SysNet_Plan.tsx       |     100 |      100 |     100 |     100 |                                                             
+  plan.tsx              |     100 |      100 |     100 |     100 |                                                             
+ src/Interfaces         |       0 |      100 |     100 |       0 |                                                             
+  course.ts             |       0 |        0 |       0 |       0 |                                                             
+  plan.ts               |       0 |        0 |       0 |       0 |                                                             
+  requirements.ts       |       0 |      100 |     100 |       0 | 8-226                                                       
+  semester.ts           |       0 |        0 |       0 |       0 |                                                             
+------------------------|---------|----------|---------|---------|-------------------------------------------------------------
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
-Time:        3.752 s
+Time:        3.852 s
 Ran all test suites.
