@@ -44,7 +44,7 @@ FAIL src/App.test.tsx
             [33mid[39m=[32m"welcome_message"[39m
           [36m>[39m
             [36m<p>[39m
-              [0mWelcome to your personal Degree Planner! Some basic tools have been designed to make your visit accessible to your needs; this includes creating new plans from scratch and/or compiling data from a csv file. You will be able to add, remove, edit, and save various courses/semesters in a multitude of plans. Scroll to the bottom of the page for more instructions (will enhance later by making an expandable/disposable button near the top of the page).[0m
+              [0mWelcome to your personal Degree Planner! Some basic tools have been designed to make your visit accessible to your needs; this includes creating new plans from scratch and/or compiling data from a csv file. You will be able to add, remove, edit, and save various courses/semesters in a multitude of plans. You will be able to view 1 semester at a time or multiple semesters at once. You will also be able to add or remove new courses to each semester, and also add and delete a plan entirely. You can also skip a semester. There a templates for each concentration that you can work on and there are many options to choose from when creating your plan.[0m
             [36m</p>[39m
           [36m</div>[39m
           [36m<hr />[39m
@@ -117,5 +117,5 @@ All files              |   37.52 |    21.15 |      30 |   37.96 |
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
-Time:        3.882 s
+Time:        3.88 s
 Ran all test suites.
