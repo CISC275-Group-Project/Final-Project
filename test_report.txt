@@ -133,10 +133,10 @@ FAIL src/App.test.tsx
 ------------------------|---------|----------|---------|---------|-------------------------------------------------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                           
 ------------------------|---------|----------|---------|---------|-------------------------------------------------------------
-All files               |   39.33 |    21.53 |   31.53 |   39.76 |                                                             
+All files               |   57.69 |    33.07 |   46.47 |   58.16 |                                                             
  src                    |     100 |      100 |     100 |     100 |                                                             
   App.tsx               |     100 |      100 |     100 |     100 |                                                             
- src/Components         |   16.61 |     2.38 |   12.64 |   16.71 |                                                             
+ src/Components         |   17.88 |     2.27 |   12.64 |      18 |                                                             
   CourseEdit.tsx        |       0 |      100 |       0 |       0 | 17-72                                                       
   DisplayFall.tsx       |       0 |      100 |       0 |       0 | 41-59                                                       
   DisplayPlan.tsx       |       0 |        0 |       0 |       0 | 17-221                                                      
@@ -144,7 +144,7 @@ All files               |   39.33 |    21.53 |   31.53 |   39.76 |
   DisplaySummer.tsx     |       0 |      100 |       0 |       0 | 40-49                                                       
   DisplayWinter.tsx     |       0 |      100 |       0 |       0 | 40-49                                                       
   Requirements.tsx      |       0 |        0 |       0 |       0 |                                                             
-  Semester.tsx          |   21.34 |      0.9 |   13.79 |   21.34 | 100-314,319-323,328-329,334-339,343-352,364-408,451,480,509 
+  Semester.tsx          |   23.03 |     0.84 |   13.79 |   23.03 | 117-331,336-340,345-346,351-356,360-369,385-446,489,518,547 
   clearingCourse.tsx    |       0 |        0 |       0 |       0 | 20-28                                                       
   clearingSemester.tsx  |      50 |      100 |       0 |      50 | 15                                                          
   course.tsx            |   43.47 |       25 |   44.44 |    40.9 | 46,48,60-86                                                 
@@ -154,8 +154,12 @@ All files               |   39.33 |    21.53 |   31.53 |   39.76 |
   useSessionStorage.tsx |    87.5 |       50 |     100 |    87.5 | 8                                                           
  src/Components/Plans   |     100 |      100 |     100 |     100 |                                                             
   AI_Plan.tsx           |     100 |      100 |     100 |     100 |                                                             
+  Bio_Plan.tsx          |     100 |      100 |     100 |     100 |                                                             
   Cyber_Plan.tsx        |     100 |      100 |     100 |     100 |                                                             
+  Data_Plan.tsx         |     100 |      100 |     100 |     100 |                                                             
+  High_Plan.tsx         |     100 |      100 |     100 |     100 |                                                             
   SysNet_Plan.tsx       |     100 |      100 |     100 |     100 |                                                             
+  Theory_Plan.tsx       |     100 |      100 |     100 |     100 |                                                             
   plan.tsx              |     100 |      100 |     100 |     100 |                                                             
  src/Interfaces         |       0 |      100 |     100 |       0 |                                                             
   course.ts             |       0 |        0 |       0 |       0 |                                                             
@@ -166,5 +170,5 @@ All files               |   39.33 |    21.53 |   31.53 |   39.76 |
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
-Time:        3.767 s
+Time:        4.322 s
 Ran all test suites.
