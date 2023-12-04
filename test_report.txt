@@ -133,10 +133,10 @@ FAIL src/App.test.tsx
 ------------------------|---------|----------|---------|---------|-------------------------------------------------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                           
 ------------------------|---------|----------|---------|---------|-------------------------------------------------------------
-All files               |   57.69 |    33.07 |   46.47 |   58.16 |                                                             
+All files               |   57.79 |    32.81 |    46.8 |   58.26 |                                                             
  src                    |     100 |      100 |     100 |     100 |                                                             
   App.tsx               |     100 |      100 |     100 |     100 |                                                             
- src/Components         |   17.88 |     2.27 |   12.64 |      18 |                                                             
+ src/Components         |   17.75 |     2.24 |   12.79 |   17.87 |                                                             
   CourseEdit.tsx        |       0 |      100 |       0 |       0 | 17-72                                                       
   DisplayFall.tsx       |       0 |      100 |       0 |       0 | 41-59                                                       
   DisplayPlan.tsx       |       0 |        0 |       0 |       0 | 17-221                                                      
@@ -144,13 +144,13 @@ All files               |   57.69 |    33.07 |   46.47 |   58.16 |
   DisplaySummer.tsx     |       0 |      100 |       0 |       0 | 40-49                                                       
   DisplayWinter.tsx     |       0 |      100 |       0 |       0 | 40-49                                                       
   Requirements.tsx      |       0 |        0 |       0 |       0 |                                                             
-  Semester.tsx          |   23.03 |     0.84 |   13.79 |   23.03 | 117-331,336-340,345-346,351-356,360-369,385-446,489,518,547 
+  Semester.tsx          |   22.66 |     0.83 |   13.79 |   22.66 | 116-330,335-339,344-345,350-355,359-368,384-445,488,517,546 
   clearingCourse.tsx    |       0 |        0 |       0 |       0 | 20-28                                                       
   clearingSemester.tsx  |      50 |      100 |       0 |      50 | 15                                                          
   course.tsx            |   43.47 |       25 |   44.44 |    40.9 | 46,48,60-86                                                 
   draggingCourses.tsx   |       0 |        0 |       0 |       0 |                                                             
   dragndrop.tsx         |       0 |        0 |       0 |       0 | 5-59                                                        
-  dropAdd.tsx           |      20 |      100 |       0 |      20 | 20-65                                                       
+  dropAdd.tsx           |   33.33 |      100 |       0 |   33.33 | 20-29                                                       
   useSessionStorage.tsx |    87.5 |       50 |     100 |    87.5 | 8                                                           
  src/Components/Plans   |     100 |      100 |     100 |     100 |                                                             
   AI_Plan.tsx           |     100 |      100 |     100 |     100 |                                                             
@@ -170,5 +170,5 @@ All files               |   57.69 |    33.07 |   46.47 |   58.16 |
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
-Time:        4.322 s
+Time:        4.149 s
 Ran all test suites.
