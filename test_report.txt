@@ -180,12 +180,12 @@ FAIL src/App.test.tsx
 --------------------------------|---------|----------|---------|---------|-------------------------------------------------
 File                            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                               
 --------------------------------|---------|----------|---------|---------|-------------------------------------------------
-All files                       |   55.22 |    29.15 |   44.19 |   56.11 |                                                 
+All files                       |   55.22 |    28.91 |   44.19 |   56.11 |                                                 
  src                            |     100 |      100 |     100 |     100 |                                                 
   App.tsx                       |     100 |      100 |     100 |     100 |                                                 
  src/Components                 |   20.67 |     3.52 |   21.05 |   20.56 |                                                 
   CourseEdit.tsx                |    7.14 |      100 |       0 |    7.14 | 31-83                                           
-  Semester.tsx                  |      20 |      0.8 |   15.15 |   19.91 | 155-418,423-427,432-433,442-458,463-473,477-585 
+  Semester.tsx                  |      20 |      0.8 |   15.15 |   19.91 | 155-418,423-427,432-433,442-458,463-472,476-584 
   clearingCourse.tsx            |       0 |        0 |       0 |       0 | 20-28                                           
   course.tsx                    |   52.63 |    33.33 |   66.66 |      50 | 46,48,60-78                                     
   draggingCourses.tsx           |       0 |        0 |       0 |       0 |                                                 
@@ -213,7 +213,7 @@ All files                       |   55.22 |    29.15 |   44.19 |   56.11 |
   Theory_Plan.tsx               |     100 |      100 |     100 |     100 |                                                 
   plan.tsx                      |     100 |      100 |     100 |     100 |                                                 
  src/Components/DisplaySemester |       0 |        0 |       0 |       0 |                                                 
-  DisplayFall.tsx               |       0 |        0 |       0 |       0 | 67-91                                           
+  DisplayFall.tsx               |       0 |        0 |       0 |       0 | 63-88                                           
   DisplayPlan.tsx               |       0 |        0 |       0 |       0 | 21-266                                          
   DisplaySpring.tsx             |       0 |        0 |       0 |       0 | 68-92                                           
   DisplaySummer.tsx             |       0 |        0 |       0 |       0 | 68-82                                           
@@ -227,5 +227,5 @@ All files                       |   55.22 |    29.15 |   44.19 |   56.11 |
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
-Time:        4.503 s
+Time:        4.432 s
 Ran all test suites.
