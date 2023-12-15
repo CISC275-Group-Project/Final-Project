@@ -141,6 +141,16 @@ FAIL src/App.test.tsx
                   [0mPick a Plan:[0m
                 [36m</button>[39m
               [36m</div>[39m
+              [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mstyle[39m=[32m"background-color: rgb(153, 178, 221); border-color: #4d7298; margin: 5px 5px 5px 5px; color: black;"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mImport CSV[0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div />[39m
             [36m</div>[39m
             [36m<hr[39m
               [33mstyle[39m=[32m"background-color: rgb(15, 35, 76);"[39m
@@ -170,21 +180,22 @@ FAIL src/App.test.tsx
 --------------------------------|---------|----------|---------|---------|-------------------------------------------------
 File                            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                               
 --------------------------------|---------|----------|---------|---------|-------------------------------------------------
-All files                       |   55.86 |    29.96 |   45.93 |   56.65 |                                                 
+All files                       |   55.22 |    29.15 |   44.19 |   56.11 |                                                 
  src                            |     100 |      100 |     100 |     100 |                                                 
   App.tsx                       |     100 |      100 |     100 |     100 |                                                 
- src/Components                 |   20.12 |     3.52 |   22.64 |   19.87 |                                                 
+ src/Components                 |   20.67 |     3.52 |   21.05 |   20.56 |                                                 
   CourseEdit.tsx                |    7.14 |      100 |       0 |    7.14 | 31-83                                           
   Requirements.tsx              |       0 |        0 |       0 |       0 |                                                 
-  Semester.tsx                  |   19.24 |      0.8 |   17.24 |   18.98 | 144-407,412-416,421-422,431-458,463-473,477-570 
+  Semester.tsx                  |      20 |      0.8 |   15.15 |   19.91 | 154-417,422-426,431-432,441-457,462-472,476-584 
   clearingCourse.tsx            |       0 |        0 |       0 |       0 | 20-28                                           
   course.tsx                    |   52.63 |    33.33 |   66.66 |      50 | 46,48,60-78                                     
   draggingCourses.tsx           |       0 |        0 |       0 |       0 |                                                 
   dragndrop.tsx                 |       0 |        0 |       0 |       0 | 5-59                                            
   useSessionStorage.tsx         |    87.5 |       50 |     100 |    87.5 | 8                                               
- src/Components/Buttons         |   66.66 |        0 |      48 |   66.66 |                                                 
+ src/Components/Buttons         |   54.38 |        0 |   43.33 |   54.38 |                                                 
   ClearAllSemesters.tsx         |     100 |      100 |     100 |     100 |                                                 
   ExportCSV.tsx                 |       0 |        0 |       0 |       0 |                                                 
+  ImportCSV.tsx                 |   27.77 |        0 |      20 |   27.77 | 20-22,27-36,73-74                               
   LoadPlan.tsx                  |      80 |      100 |   66.66 |      80 | 29                                              
   PickAPlan.tsx                 |      80 |      100 |   66.66 |      80 | 42                                              
   SavePlanInto.tsx              |      80 |      100 |   66.66 |      80 | 33                                              
@@ -217,5 +228,5 @@ All files                       |   55.86 |    29.96 |   45.93 |   56.65 |
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
-Time:        4.359 s
+Time:        4.731 s
 Ran all test suites.
