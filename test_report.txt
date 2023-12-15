@@ -170,19 +170,19 @@ FAIL src/App.test.tsx
 --------------------------------|---------|----------|---------|---------|-------------------------------------------------
 File                            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                               
 --------------------------------|---------|----------|---------|---------|-------------------------------------------------
-All files                       |   56.86 |    29.96 |   47.85 |   57.39 |                                                 
+All files                       |   55.48 |    29.75 |   45.61 |   56.26 |                                                 
  src                            |     100 |      100 |     100 |     100 |                                                 
   App.tsx                       |     100 |      100 |     100 |     100 |                                                 
- src/Components                 |   19.62 |     3.52 |   21.15 |   19.35 |                                                 
+ src/Components                 |   19.43 |     3.52 |   21.15 |   19.16 |                                                 
   CourseEdit.tsx                |    7.14 |      100 |       0 |    7.14 | 31-83                                           
   Requirements.tsx              |       0 |        0 |       0 |       0 |                                                 
-  Semester.tsx                  |   18.56 |      0.8 |   14.28 |   18.29 | 144-407,412-416,421-422,431-458,463-473,477-570 
+  Semester.tsx                  |   18.33 |      0.8 |   14.28 |   18.06 | 144-421,426-430,435-436,445-472,477-487,491-584 
   clearingCourse.tsx            |       0 |        0 |       0 |       0 | 20-28                                           
   course.tsx                    |   52.63 |    33.33 |   66.66 |      50 | 46,48,60-78                                     
   draggingCourses.tsx           |       0 |        0 |       0 |       0 |                                                 
   dragndrop.tsx                 |       0 |        0 |       0 |       0 | 5-59                                            
   useSessionStorage.tsx         |    87.5 |       50 |     100 |    87.5 | 8                                               
- src/Components/Buttons         |   66.66 |        0 |      48 |   66.66 |                                                 
+ src/Components/Buttons         |      65 |        0 |      48 |      65 |                                                 
   ClearAllSemesters.tsx         |     100 |      100 |     100 |     100 |                                                 
   ExportCSV.tsx                 |       0 |        0 |       0 |       0 |                                                 
   LoadPlan.tsx                  |      80 |      100 |   66.66 |      80 | 29                                              
@@ -191,7 +191,7 @@ All files                       |   56.86 |    29.96 |   47.85 |   57.39 |
   SkipSemester.tsx              |   33.33 |      100 |       0 |   33.33 | 19-41                                           
   StartNewPlan.tsx              |     100 |      100 |     100 |     100 |                                                 
   clearingSemester.tsx          |      80 |        0 |   66.66 |      80 | 55                                              
-  dropAdd.tsx                   |   14.28 |      100 |       0 |   14.28 | 26-51                                           
+  dropAdd.tsx                   |    12.5 |        0 |       0 |    12.5 | 29-81                                           
   requiredClasses.tsx           |      80 |        0 |   66.66 |      80 | 44                                              
  src/Components/Default Plans   |     100 |      100 |     100 |     100 |                                                 
   AI_Plan.tsx                   |     100 |      100 |     100 |     100 |                                                 
@@ -203,11 +203,11 @@ All files                       |   56.86 |    29.96 |   47.85 |   57.39 |
   Theory_Plan.tsx               |     100 |      100 |     100 |     100 |                                                 
   plan.tsx                      |     100 |      100 |     100 |     100 |                                                 
  src/Components/DisplaySemester |       0 |        0 |       0 |       0 |                                                 
-  DisplayFall.tsx               |       0 |        0 |       0 |       0 | 67-86                                           
+  DisplayFall.tsx               |       0 |        0 |       0 |       0 | 67-91                                           
   DisplayPlan.tsx               |       0 |        0 |       0 |       0 | 21-266                                          
-  DisplaySpring.tsx             |       0 |        0 |       0 |       0 | 68-87                                           
-  DisplaySummer.tsx             |       0 |        0 |       0 |       0 | 68-77                                           
-  DisplayWinter.tsx             |       0 |        0 |       0 |       0 | 69-78                                           
+  DisplaySpring.tsx             |       0 |        0 |       0 |       0 | 68-92                                           
+  DisplaySummer.tsx             |       0 |        0 |       0 |       0 | 68-82                                           
+  DisplayWinter.tsx             |       0 |        0 |       0 |       0 | 69-83                                           
  src/Interfaces                 |     100 |      100 |     100 |     100 |                                                 
   course.ts                     |       0 |        0 |       0 |       0 |                                                 
   plan.ts                       |       0 |        0 |       0 |       0 |                                                 
@@ -217,5 +217,5 @@ All files                       |   56.86 |    29.96 |   47.85 |   57.39 |
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
-Time:        4.19 s
+Time:        4.485 s
 Ran all test suites.
