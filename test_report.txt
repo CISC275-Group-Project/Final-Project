@@ -347,19 +347,18 @@ All files                       |   54.29 |    29.39 |   43.85 |   55.16 |
   App.tsx                       |     100 |      100 |     100 |     100 |                                                 
  src/Components                 |   20.67 |     3.52 |   21.05 |   20.56 |                                                 
   CourseEdit.tsx                |    7.14 |      100 |       0 |    7.14 | 31-83                                           
-  Semester.tsx                  |      20 |      0.8 |   15.15 |   19.91 | 158-421,426-430,435-436,445-461,466-475,479-587 
+  Semester.tsx                  |      20 |      0.8 |   15.15 |   19.91 | 144-407,412-416,421-422,431-447,452-461,465-573 
   clearingCourse.tsx            |       0 |        0 |       0 |       0 | 20-28                                           
-  course.tsx                    |   52.63 |    33.33 |   66.66 |      50 | 46,48,60-78                                     
-  draggingCourses.tsx           |       0 |        0 |       0 |       0 |                                                 
+  course.tsx                    |   52.63 |    33.33 |   66.66 |      50 | 37,39,51-69                                     
   dragndrop.tsx                 |       0 |        0 |       0 |       0 | 5-59                                            
   useSessionStorage.tsx         |    87.5 |       50 |     100 |    87.5 | 8                                               
  src/Components/Buttons         |   52.17 |     12.5 |   41.66 |   52.17 |                                                 
   ClearAllSemesters.tsx         |     100 |      100 |     100 |     100 |                                                 
   ExportCSV.tsx                 |   41.66 |      100 |   33.33 |   41.66 | 22-38                                           
-  ImportCSV.tsx                 |   27.77 |        0 |      20 |   27.77 | 20-22,27-36,73-74                               
-  LoadPlan.tsx                  |      80 |      100 |   66.66 |      80 | 29                                              
-  PickAPlan.tsx                 |      80 |      100 |   66.66 |      80 | 42                                              
-  SavePlanInto.tsx              |      80 |      100 |   66.66 |      80 | 33                                              
+  ImportCSV.tsx                 |   27.77 |        0 |      20 |   27.77 | 21-23,28-37,74-75                               
+  LoadPlan.tsx                  |      80 |      100 |   66.66 |      80 | 30                                              
+  PickAPlan.tsx                 |      80 |      100 |   66.66 |      80 | 43                                              
+  SavePlanInto.tsx              |      80 |      100 |   66.66 |      80 | 34                                              
   SkipSemester.tsx              |   33.33 |      100 |       0 |   33.33 | 19-41                                           
   StartNewPlan.tsx              |     100 |      100 |     100 |     100 |                                                 
   clearingSemester.tsx          |      80 |        0 |   66.66 |      80 | 55                                              
@@ -376,10 +375,10 @@ All files                       |   54.29 |    29.39 |   43.85 |   55.16 |
   plan.tsx                      |     100 |      100 |     100 |     100 |                                                 
  src/Components/DisplaySemester |       0 |        0 |       0 |       0 |                                                 
   DisplayFall.tsx               |       0 |        0 |       0 |       0 | 63-88                                           
-  DisplayPlan.tsx               |       0 |        0 |       0 |       0 | 18-263                                          
-  DisplaySpring.tsx             |       0 |        0 |       0 |       0 | 68-92                                           
-  DisplaySummer.tsx             |       0 |        0 |       0 |       0 | 68-82                                           
-  DisplayWinter.tsx             |       0 |        0 |       0 |       0 | 69-83                                           
+  DisplayPlan.tsx               |       0 |        0 |       0 |       0 | 19-264                                          
+  DisplaySpring.tsx             |       0 |        0 |       0 |       0 | 69-93                                           
+  DisplaySummer.tsx             |       0 |        0 |       0 |       0 | 69-83                                           
+  DisplayWinter.tsx             |       0 |        0 |       0 |       0 | 70-84                                           
  src/Interfaces                 |     100 |      100 |     100 |     100 |                                                 
   course.ts                     |       0 |        0 |       0 |       0 |                                                 
   plan.ts                       |       0 |        0 |       0 |       0 |                                                 
@@ -389,5 +388,5 @@ All files                       |   54.29 |    29.39 |   43.85 |   55.16 |
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
-Time:        4.49 s
+Time:        4.589 s
 Ran all test suites.
