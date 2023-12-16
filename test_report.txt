@@ -44,11 +44,165 @@ FAIL src/App.test.tsx
               [33mclass[39m=[32m"collapse"[39m
               [33mid[39m=[32m"welcome_message"[39m
             [36m>[39m
-              [36m<p[39m
-                [33mstyle[39m=[32m"padding: 20px;"[39m
-              [36m>[39m
-                [0mWelcome to your personal Degree Planner! Some basic tools have been designed to make your visit accessible to your to your needs; this includes creating new plans from scratch and/or compiling data from a csv file. You will be able to add, remove, edit, and save various courses/semesters in a multitude of plans. You will be able to view 1 semester at a time or multiple semesters at once. You will also be able to add or remove new courses to each semester, and also add and delete a plan entirely. You can also skip a semester. There a a templates for each concentration that you can work on and there are many options to choose from when creating your plan.[0m
-              [36m</p>[39m
+              [36m<figure>[39m
+                [36m<blockquote[39m
+                  [33mstyle[39m=[32m"padding: 20px;"[39m
+                [36m>[39m
+                  [36m<h6>[39m
+                    [0mWelcome to your personal Degree Planner![0m
+                  [36m</h6>[39m
+                  [36m<hr />[39m
+                  [36m<p>[39m
+                    [0mSome basic tools have been designed to make your visit accessible to your needs. This includes:[0m
+                  [36m</p>[39m
+                  [36m<div[39m
+                    [33mstyle[39m=[32m"display: flex; flex-direction: row; text-align: center; align-content: center; align-items: center;"[39m
+                  [36m>[39m
+                    [36m<ul[39m
+                      [33mstyle[39m=[32m"display: flex; flex-direction: column; padding: 40px; text-align: left; margin-left: 30px;"[39m
+                    [36m>[39m
+                      [36m<li>[39m
+                        [0mCreating new plans from scratch[0m
+                      [36m</li>[39m
+                      [36m<li>[39m
+                        [0mSee a table that shows a single semester or multiple semesters of courses[0m
+                      [36m</li>[39m
+                      [36m<li>[39m
+                        [0mSee a list of all the default Computer Science plans (ex. Artificial Intelligence), and of your saved custom plans[0m
+                      [36m</li>[39m
+                      [36m<li>[39m
+                        [0mEdit course information or reset it to the default course[0m
+                      [36m</li>[39m
+                      [36m<li>[39m
+                        [0mClear all existing courses in a semester or all semesters entirely[0m
+                      [36m</li>[39m
+                      [36m<li>[39m
+                        [0mInsert or remove a plan into your saved plans or working session[0m
+                      [36m</li>[39m
+                      [36m<li>[39m
+                        [0mSkip semesters[0m
+                      [36m</li>[39m
+                    [36m</ul>[39m
+                    [36m<ul[39m
+                      [33mstyle[39m=[32m"display: flex; flex-direction: column; padding: 40px; text-align: left; margin-left: 30px;"[39m
+                    [36m>[39m
+                      [36m<li>[39m
+                        [0mInsert or remove semesters from your view[0m
+                      [36m</li>[39m
+                      [36m<li>[39m
+                        [0mInsert or remove a course from a semester[0m
+                      [36m</li>[39m
+                      [36m<li>[39m
+                        [0mSave any plans you make[0m
+                      [36m</li>[39m
+                      [36m<li>[39m
+                        [0mSee any unfilled requirements you have for your degree plan and which classes would fulfill that requirement[0m
+                      [36m</li>[39m
+                      [36m<li>[39m
+                        [0mMove courses from one semester to another semester[0m
+                      [36m</li>[39m
+                      [36m<li>[39m
+                        [0mExport your plans as a CSV file so you can share it with advisers[0m
+                      [36m</li>[39m
+                      [36m<li>[39m
+                        [0mImport your plan from a CSV file[0m
+                      [36m</li>[39m
+                    [36m</ul>[39m
+                  [36m</div>[39m
+                  [36m<hr />[39m
+                  [36m<p>[39m
+                    [0mNeed help understanding the buttons?[0m
+                  [36m</p>[39m
+                  [36m<u>[39m
+                    [0mHere is an explanation of the buttons![0m
+                  [36m</u>[39m
+                  [36m<br />[39m
+                  [36m<br />[39m
+                  [36m<em>[39m
+                    [0mThe [0m
+                    [36m<b>[39m
+                      [0mStart New Plan[0m
+                    [36m</b>[39m
+                    [0m button allows you to restart restart your view and current working plan decide that you don't like you're changes and want a redo.[0m
+                  [36m</em>[39m
+                  [36m<br />[39m
+                  [36m<em>[39m
+                    [0mThe [0m
+                    [36m<b>[39m
+                      [0mRequired Classes[0m
+                    [36m</b>[39m
+                    [0m button visualizes the courses you will need to complete or have already completed for your chosen degree plan.[0m
+                  [36m</em>[39m
+                  [36m<br />[39m
+                  [36m<em>[39m
+                    [0mThe [0m
+                    [36m<b>[39m
+                      [0mClear Semester[0m
+                    [36m</b>[39m
+                    [0m button allows you to select a semester that you specifically want to clear of courses.[0m
+                  [36m</em>[39m
+                  [36m<br />[39m
+                  [36m<em>[39m
+                    [0mThe [0m
+                    [36m<b>[39m
+                      [0mClear ALL Semesters[0m
+                    [36m</b>[39m
+                    [0m button allows you to clear all the semesters in your plan at once.[0m
+                  [36m</em>[39m
+                  [36m<br />[39m
+                  [36m<em>[39m
+                    [0mThe [0m
+                    [36m<b>[39m
+                      [0mSave Plan Into[0m
+                    [36m</b>[39m
+                    [0m button allows you to save save your current plan that you are working on plan 1, plan 2, plan 3, or plan 4 “folder“ so that you may go back to it later.[0m
+                  [36m</em>[39m
+                  [36m<br />[39m
+                  [36m<em>[39m
+                    [0mThe [0m
+                    [36m<b>[39m
+                      [0mLoad[0m
+                    [36m</b>[39m
+                    [0m button allows you to load one of those plans that you saved under plan 1, plan 2, plan 3 or plan 4.[0m
+                  [36m</em>[39m
+                  [36m<br />[39m
+                  [36m<em>[39m
+                    [0mThe [0m
+                    [36m<b>[39m
+                      [0mPick a Plan[0m
+                    [36m</b>[39m
+                    [0m button allows you to choose from one of the default concentrations of computer science degrees or choose a custom concentration to start planning your own![0m
+                  [36m</em>[39m
+                  [36m<br />[39m
+                  [36m<em>[39m
+                    [0mThe [0m
+                    [36m<b>[39m
+                      [0mImport CSV[0m
+                    [36m</b>[39m
+                    [0m button allows you to import a CSV file into the planner so you can work on it.[0m
+                  [36m</em>[39m
+                  [36m<br />[39m
+                  [36m<em>[39m
+                    [0mThe [0m
+                    [36m<b>[39m
+                      [0mExport CSV[0m
+                    [36m</b>[39m
+                    [0m button allows you to export your [0m
+                    [36m<b>[39m
+                      [0msaved[0m
+                    [36m</b>[39m
+                    [0m plans into a CSV file so that you can share it with your advisors.[0m
+                  [36m</em>[39m
+                [36m</blockquote>[39m
+              [36m</figure>[39m
+              [36m<h6>[39m
+                [0mHere is an example of how you might start![0m
+              [36m</h6>[39m
+              [36m<img[39m
+                [33mheight[39m=[32m"60%"[39m
+                [33msrc[39m=[32m"exampleGIF.gif"[39m
+                [33mwidth[39m=[32m"60%"[39m
+              [36m/>[39m
             [36m</div>[39m
           [36m</div>[39m
           [36m<div[39m
@@ -151,6 +305,14 @@ FAIL src/App.test.tsx
                 [36m</button>[39m
               [36m</div>[39m
               [36m<div />[39m
+              [36m<a[39m
+                [33mclass[39m=[32m"export-button btn btn-primary"[39m
+                [33mhref[39m=[32m"#"[39m
+                [33mrole[39m=[32m"button"[39m
+                [33mtabindex[39m=[32m"0"[39m
+              [36m>[39m
+                [0mExport CSV[0m
+              [36m</a>[39m
             [36m</div>[39m
             [36m<hr[39m
               [33mstyle[39m=[32m"background-color: rgb(15, 35, 76);"[39m
@@ -180,20 +342,20 @@ FAIL src/App.test.tsx
 --------------------------------|---------|----------|---------|---------|-------------------------------------------------
 File                            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                               
 --------------------------------|---------|----------|---------|---------|-------------------------------------------------
-All files                       |   54.48 |    28.91 |   44.19 |   55.36 |                                                 
+All files                       |   54.29 |    29.39 |   43.85 |   55.16 |                                                 
  src                            |     100 |      100 |     100 |     100 |                                                 
   App.tsx                       |     100 |      100 |     100 |     100 |                                                 
  src/Components                 |   20.67 |     3.52 |   21.05 |   20.56 |                                                 
   CourseEdit.tsx                |    7.14 |      100 |       0 |    7.14 | 31-83                                           
-  Semester.tsx                  |      20 |      0.8 |   15.15 |   19.91 | 155-418,423-427,432-433,442-458,463-472,476-584 
+  Semester.tsx                  |      20 |      0.8 |   15.15 |   19.91 | 158-421,426-430,435-436,445-461,466-475,479-587 
   clearingCourse.tsx            |       0 |        0 |       0 |       0 | 20-28                                           
   course.tsx                    |   52.63 |    33.33 |   66.66 |      50 | 46,48,60-78                                     
   draggingCourses.tsx           |       0 |        0 |       0 |       0 |                                                 
   dragndrop.tsx                 |       0 |        0 |       0 |       0 | 5-59                                            
   useSessionStorage.tsx         |    87.5 |       50 |     100 |    87.5 | 8                                               
- src/Components/Buttons         |   54.38 |        0 |   43.33 |   54.38 |                                                 
+ src/Components/Buttons         |   52.17 |     12.5 |   41.66 |   52.17 |                                                 
   ClearAllSemesters.tsx         |     100 |      100 |     100 |     100 |                                                 
-  ExportCSV.tsx                 |       0 |        0 |       0 |       0 |                                                 
+  ExportCSV.tsx                 |   41.66 |      100 |   33.33 |   41.66 | 22-38                                           
   ImportCSV.tsx                 |   27.77 |        0 |      20 |   27.77 | 20-22,27-36,73-74                               
   LoadPlan.tsx                  |      80 |      100 |   66.66 |      80 | 29                                              
   PickAPlan.tsx                 |      80 |      100 |   66.66 |      80 | 42                                              
@@ -214,7 +376,7 @@ All files                       |   54.48 |    28.91 |   44.19 |   55.36 |
   plan.tsx                      |     100 |      100 |     100 |     100 |                                                 
  src/Components/DisplaySemester |       0 |        0 |       0 |       0 |                                                 
   DisplayFall.tsx               |       0 |        0 |       0 |       0 | 63-88                                           
-  DisplayPlan.tsx               |       0 |        0 |       0 |       0 | 21-266                                          
+  DisplayPlan.tsx               |       0 |        0 |       0 |       0 | 18-263                                          
   DisplaySpring.tsx             |       0 |        0 |       0 |       0 | 68-92                                           
   DisplaySummer.tsx             |       0 |        0 |       0 |       0 | 68-82                                           
   DisplayWinter.tsx             |       0 |        0 |       0 |       0 | 69-83                                           
@@ -227,5 +389,5 @@ All files                       |   54.48 |    28.91 |   44.19 |   55.36 |
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
-Time:        4.488 s
+Time:        4.591 s
 Ran all test suites.
